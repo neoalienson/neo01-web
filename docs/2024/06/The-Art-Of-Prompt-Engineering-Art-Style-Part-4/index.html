@@ -24,25 +24,24 @@
     
 
     
-    <title>Interacting with Docker Containers - Shell and SSH | Decoding Digital Anomalies</title>
+    <title>The Art of Prompt Engineering - Art Style Part 4 | Decoding Digital Anomalies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <meta name="keywords" content="docker">
+    <meta name="keywords" content="">
     
-    <meta name="description" content="Docker has revolutionized the way we build, ship, and run applications by encapsulating them in lightweight, portable containers. Interacting with these containers with shell and SSH is not the best p">
+    <meta name="description" content="This is continue of part 3. Cartoon and Anime The image generated could potentially resemble copyrighted materials, so it’s essential to use caution when using these prompts. Cartoon  Prompt: Cartoon">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Interacting with Docker Containers - Shell and SSH">
-<meta property="og:url" content="http://neo01.com/2024/Interacting-With-Docker-Containers-Shell-And-SSH/index.html">
+<meta property="og:title" content="The Art of Prompt Engineering - Art Style Part 4">
+<meta property="og:url" content="http://neo01.com/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-4/index.html">
 <meta property="og:site_name" content="Decoding Digital Anomalies">
-<meta property="og:description" content="Docker has revolutionized the way we build, ship, and run applications by encapsulating them in lightweight, portable containers. Interacting with these containers with shell and SSH is not the best p">
+<meta property="og:description" content="This is continue of part 3. Cartoon and Anime The image generated could potentially resemble copyrighted materials, so it’s essential to use caution when using these prompts. Cartoon  Prompt: Cartoon">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://neo01.com/2024/Interacting-With-Docker-Containers-Shell-And-SSH/banner.jpeg">
-<meta property="article:published_time" content="2024-07-04T00:00:00.000Z">
-<meta property="article:modified_time" content="2024-07-04T15:42:25.145Z">
+<meta property="og:image" content="http://neo01.com/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-4/banner.jpg">
+<meta property="article:published_time" content="2024-06-07T00:00:00.000Z">
+<meta property="article:modified_time" content="2024-07-08T14:22:22.840Z">
 <meta property="article:author" content="Neo Alienson">
-<meta property="article:tag" content="docker">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://neo01.com/2024/Interacting-With-Docker-Containers-Shell-And-SSH/banner.jpeg">
+<meta name="twitter:image" content="http://neo01.com/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-4/banner.jpg">
     
 
     
@@ -173,19 +172,19 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/Development/">Development</a>
+    <a class="page-title-link" href="/categories/AI/">AI</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/AI/Art-Gallery/">Art Gallery</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-2024/Interacting-With-Docker-Containers-Shell-And-SSH" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
+                            <article id="post-2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-4" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Interacting with Docker Containers - Shell and SSH
+        The Art of Prompt Engineering - Art Style Part 4
         </h1>
     
 
@@ -196,9 +195,11 @@
                 
     <div class="article-date">
       <i class="fa fa-calendar"></i>
-      <a href="/2024/Interacting-With-Docker-Containers-Shell-And-SSH/" class="article-date">
+      <a href="/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-4/" class="article-date">
         
-          Created <time datetime="2024-07-04T00:00:00.000Z" itemprop="datePublished">2024-07-04</time>,
+          Created <time datetime="2024-06-07T00:00:00.000Z" itemprop="datePublished">2024-06-07</time>
+          &nbsp;<i class="fa fa-calendar"></i>
+          Updated <time datetime="2024-07-08T14:22:22.840Z" itemprop="datePublished">2024-07-08</time>
         
       </a>
     </div>
@@ -207,95 +208,86 @@
                 
 
                 
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/docker/" rel="tag">docker</a>
-    </div>
-
                 
 
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Shell-Access-to-Containers"><span class="toc-text">Shell Access to Containers</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SSH-into-Containers"><span class="toc-text">SSH into Containers</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Why-Shell-and-SSH-are-bad-for-Docker"><span class="toc-text">Why Shell and SSH are bad for Docker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Conclusion"><span class="toc-text">Conclusion</span></a></li></ol>
-            <p>Docker has revolutionized the way we build, ship, and run applications by encapsulating them in lightweight, portable containers. Interacting with these containers with shell and SSH is not the best practise but convenient for developers. In this blog post, we’ll explore how to interact with Docker containers using shell access and SSH.</p>
-<h3 id="Shell-Access-to-Containers">Shell Access to Containers</h3>
-<p>The most straightforward method to interact with a running Docker container is through the Docker exec command, in case you build the image with shell. This command allows you to run a new command in a running container, which is especially useful for debugging or quick modifications.</p>
-<p>Here’s how you can use it:</p>
-<ol>
-<li>
-<p><strong>Identify the Container</strong>: First, you need to know the container’s ID or name. You can list all running containers with <code>docker ps</code>.<br>
-&nbsp;</p>
-</li>
-<li>
-<p><strong>Execute a Command</strong>: To run a command inside the container, use <code>docker exec</code>. For example, to start an interactive shell session, you can use:</p>
-<pre class="language-none"><code class="language-none">docker exec -it &lt;container_id_or_name&gt; /bin/sh</code></pre>
-<p>Replace <code>&lt;container_id_or_name&gt;</code> with your actual container ID or name. The <code>-it</code> flags attach an interactive tty in the container.<br>
-&nbsp;</p>
-</li>
-</ol>
-<p>⚠️ <strong>Maintain Security</strong>: Remember that building a container image with unnecessary components, especially a shell, can pose a security risk. Always build the image <code>FROM scratch</code> to keep it clean and integrate with observability for troubleshooting.</p>
-<h3 id="SSH-into-Containers">SSH into Containers</h3>
-<p>While shell access is convenient, sometimes you may need a more persistent connection method, like SSH. Setting up SSH access to a Docker container involves a few more steps:</p>
-<ol>
-<li>
-<p><strong>Create a Dockerfile</strong>: You’ll need a Dockerfile that installs SSH and sets up the necessary configurations. Here’s a simple example:</p>
-<pre class="language-none"><code class="language-none">FROM ubuntu:latest
-RUN apt-get update &amp;&amp; apt-get install -y openssh-server
-RUN mkdir /var/run/sshd
-RUN echo 'root:YOUR_PASSWORD' | chpasswd
-RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
-EXPOSE 22
-CMD ["/usr/sbin/sshd", "-D"]</code></pre>
-<p>Replace <code>YOUR_PASSWORD</code> with a secure password of your choice.<br>
-&nbsp;</p>
-</li>
-<li>
-<p><strong>Build and Run the Container</strong>: Build the image with <code>docker build</code> and run it with <code>docker run</code>, making sure to map the SSH port:</p>
-<pre class="language-none"><code class="language-none">docker build -t ssh-enabled-container .
-docker run -d -p 2222:22 ssh-enabled-container</code></pre>
-<p>&nbsp;</p>
-</li>
-<li>
-<p><strong>SSH into the Container</strong>: Use an SSH client to connect to the container:</p>
-<pre class="language-none"><code class="language-none">ssh root@localhost -p 2222</code></pre>
-<p>Use the password you set in the Dockerfile to log in.<br>
-&nbsp;</p>
-</li>
-</ol>
-<p>⚠️⚠️ <strong>Maintain Security</strong>: Remember that exposing SSH in a container can be a security risk. Always use strong passwords or SSH keys, and consider additional security measures like firewalls and SSH hardening practices. There are other dangerous ways to access the SSH port but we will not go further in this post.</p>
-<h3 id="Why-Shell-and-SSH-are-bad-for-Docker">Why Shell and SSH are bad for Docker</h3>
-<p>When you SSH into a container, you’re essentially treating it like a traditional virtual machine, which goes against the container philosophy of <strong>isolated</strong>, <strong>ephemeral</strong>, and minimalistic environments.</p>
-<ol>
-<li>
-<p><strong>Security Risks</strong>: SSH servers add unnecessary complexity and potential vulnerabilities to your container. Each SSH process running in a container is an additional attack surface for malicious actors.<br>
-&nbsp;</p>
-</li>
-<li>
-<p><strong>Container Bloat</strong>: Containers are meant to be lightweight and contain only the essential packages needed to run the application. Installing an SSH server and shell increases the size of the container and adds extra layers that are not necessary for the application to function.<br>
-&nbsp;</p>
-</li>
-<li>
-<p><strong>Deviation from Container Orchestration Tools</strong>: Modern container orchestration tools like Kubernetes provide their own methods for accessing containers, such as <code>kubectl exec</code>. Using SSH and shell can bypass these tools, leading to a deviation from standardized workflows and potentially causing configuration drift.<br>
-&nbsp;</p>
-</li>
-<li>
-<p><strong>Statefulness</strong>: Containers are designed to be stateless and immutable. SSH’ing and shell into a container and making changes can lead to a stateful configuration that is not reflected in the container’s image or definition files. This can cause issues when the container is redeployed or scaled across different environments.<br>
-&nbsp;</p>
-</li>
-<li>
-<p><strong>Lifecycle Management</strong>: Docker containers are meant to be stopped and started frequently, with changes being made through updates to the container image. By using SSH and shell, you might be tempted to make ad-hoc changes to the running container, which is against the principles of immutable infrastructure.<br>
-&nbsp;</p>
-</li>
-<li>
-<p><strong>Complexity in Management</strong>: Managing SSH keys, ensuring they are rotated and kept secure, adds an additional layer of complexity to container management. It also increases the administrative overhead of managing access to containers.</p>
-</li>
-</ol>
-<h3 id="Conclusion">Conclusion</h3>
-<p>Whether you prefer the simplicity of Docker exec or the persistence of SSH, both methods provide robust ways to interact with your Docker containers. Remember to use these tools responsibly, keeping security in mind, and you’ll be able to manage your containers effectively.</p>
-<p>We hope this guide has been helpful. For more detailed instructions and best practices, refer to the official Docker documentation and SSH configuration guides. Happy containerizing!</p>
-<p><img src="hero.jpeg" alt=""></p>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Cartoon-and-Anime"><span class="toc-text">Cartoon and Anime</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Cartoon"><span class="toc-text">Cartoon</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Comics"><span class="toc-text">Comics</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Manga"><span class="toc-text">Manga</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Chibi-Drawing"><span class="toc-text">Chibi Drawing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hayao-Miyazaki-Art"><span class="toc-text">Hayao Miyazaki Art</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Powerpuff-Girls"><span class="toc-text">Powerpuff Girls</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Dora-Cartoon"><span class="toc-text">Dora Cartoon</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#My-Littel-Pony-Cartoon"><span class="toc-text">My Littel Pony Cartoon</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Simpsons"><span class="toc-text">The Simpsons</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pikachu"><span class="toc-text">Pikachu</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pikachu-Cartoon"><span class="toc-text">Pikachu Cartoon</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hello-Kitty-Cartoon"><span class="toc-text">Hello Kitty Cartoon</span></a></li></ol></li></ol>
+            <p>This is continue of <a href="../The-Art-Of-Prompt-Engineering-Art-Style-Part-3/">part 3</a>.</p>
+<h2 id="Cartoon-and-Anime">Cartoon and Anime</h2>
+<p>The image generated could potentially resemble copyrighted materials, so it’s essential to use caution when using these prompts.</p>
+<h3 id="Cartoon">Cartoon</h3>
+<blockquote>
+<p>Prompt: Cartoon style. a llama in in an oasis</p>
+</blockquote>
+<p><img src="cartoon.jpg" alt="Cartoon Style"></p>
+<p>Cartoon drawing style is when characters and things look super silly, exaggerated, and colorful, like big eyes and funny faces!</p>
+<h3 id="Comics">Comics</h3>
+<blockquote>
+<p>Prompt: Comics style. a llama in in an oasis</p>
+</blockquote>
+<p><img src="comics.jpg" alt="Comics Style"></p>
+<p>American comics often have a bold and dynamic drawing style with exaggerated features and bright colors that make characters look cool!</p>
+<h3 id="Manga">Manga</h3>
+<blockquote>
+<p>Prompt: Manga style. a llama in in an oasis</p>
+</blockquote>
+<p><img src="manga.jpg" alt="Manga Style"></p>
+<p>Bold lines and pattern shades that bring characters to life!"</p>
+<h3 id="Chibi-Drawing">Chibi Drawing</h3>
+<blockquote>
+<p>Prompt: Chibi Drawing style. a lone llama in in a oasis inside a wild desert.</p>
+</blockquote>
+<p><img src="chibi-drawing-style.jpg" alt="Chibi Drawing Style"></p>
+<p>Chibi drawings are super cute and simplified, with big eyes, tiny bodies, and exaggerated features that make characters look adorable and youthful.</p>
+<h3 id="Hayao-Miyazaki-Art">Hayao Miyazaki Art</h3>
+<blockquote>
+<p>Prompt: Hayao Miyazaki Art style. a lone llama in in a oasis inside a wild desert.</p>
+</blockquote>
+<p><img src="hayao-miyazaki-art.jpg" alt="Hayao Miyazaki Art"></p>
+<p>Hayao Miyazaki’s drawing style is known for its whimsical, dreamy, and fantastical quality, with intricate details, expressive characters, and a blend of traditional and modern techniques that create a sense of timeless wonder.</p>
+<h3 id="Powerpuff-Girls">Powerpuff Girls</h3>
+<blockquote>
+<p>Prompt: Powerpuff Girls style. a lone llama in in a oasis inside a wild desert.</p>
+</blockquote>
+<p><img src="powerpuff-girls-style.jpg" alt="Powerpuff Girls Style"></p>
+<p>It looks like pasting Powerpuff Girls’ eyes on to a llama.</p>
+<h3 id="Dora-Cartoon">Dora Cartoon</h3>
+<blockquote>
+<p>Prompt: Dora Cartoon style. a lone llama in in a oasis inside a wild desert.</p>
+</blockquote>
+<p>It is pasting Dora’s head on to a llama.</p>
+<p><img src="dora-cartoon-style.jpg" alt="Dora Cartoon Style"></p>
+<h3 id="My-Littel-Pony-Cartoon">My Littel Pony Cartoon</h3>
+<blockquote>
+<p>Prompt: My Littel Pony Cartoon style. a lone llama in in a oasis inside a wild desert.</p>
+</blockquote>
+<p><img src="my-littel-pony-cartoon-style.jpg" alt="My Littel Pony Cartoon"></p>
+<p>A llama with too much hair?</p>
+<h3 id="The-Simpsons">The Simpsons</h3>
+<blockquote>
+<p>Prompt: The Simpsons style. a lone llama in in a oasis inside a wild desert.</p>
+</blockquote>
+<p><img src="the-simpsons-style.jpg" alt="The Simpsons"></p>
+<h3 id="Pikachu">Pikachu</h3>
+<blockquote>
+<p>Prompt: Pikachu style. a lone llama in in a oasis inside a wild desert.</p>
+</blockquote>
+<p><img src="pikachu.jpeg" alt="Pikachu"></p>
+<h3 id="Pikachu-Cartoon">Pikachu Cartoon</h3>
+<blockquote>
+<p>Prompt: Pikachu cartoon style. a lone llama in in a oasis inside a wild desert.</p>
+</blockquote>
+<p><img src="pikachu-cartoon.jpeg" alt="Pikachu cartoon"></p>
+<h3 id="Hello-Kitty-Cartoon">Hello Kitty Cartoon</h3>
+<blockquote>
+<p>Prompt: Hello Kitty Cartoon style. a lone llama in in a oasis inside a wild desert.</p>
+</blockquote>
+<p><img src="hello-kitty-cartoon-style.jpg" alt="Hello Kitty Cartoon"></p>
+<p>It is pasting Hello Kitty’s head on to a llama.</p>
+<p><a href="../The-Art-Of-Prompt-Engineering-Art-Style-Part-5/">Continue to part 5</a></p>
 <!-- commentbox plugin begins -->
     <div class="commentbox"></div>
     <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
@@ -305,7 +297,7 @@ docker run -d -p 2222:22 ssh-enabled-container</code></pre>
         </div>
         <footer class="article-footer">
             
-    <a data-url="http://neo01.com/2024/Interacting-With-Docker-Containers-Shell-And-SSH/" data-id="clybdwnc00065xgr4dqzegokq" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://neo01.com/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-4/" data-id="clyg13jo6006icar4ab124s83" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -374,16 +366,21 @@ docker run -d -p 2222:22 ssh-enabled-container</code></pre>
             "@type": "Person",
             "name": "Neo Alienson"
         },
-        "headline": "Interacting with Docker Containers - Shell and SSH",
-        "image": "http://neo01.combanner.jpeg",
-        "keywords": "docker",
-        "genre": "Development",
-        "datePublished": "2024-07-04",
-        "dateCreated": "2024-07-04",
-        "dateModified": "2024-07-04",
-        "url": "http://neo01.com/2024/Interacting-With-Docker-Containers-Shell-And-SSH/",
-        "description": "Docker has revolutionized the way we build, ship, and run applications by encapsulating them in lightweight, portable containers. Interacting with these containers with shell and SSH is not the best p",
-        "wordCount": 786
+        "headline": "The Art of Prompt Engineering - Art Style Part 4",
+        "image": "http://neo01.combanner.jpg",
+        "keywords": "",
+        "genre": "AI Art Gallery",
+        "datePublished": "2024-06-07",
+        "dateCreated": "2024-06-07",
+        "dateModified": "2024-07-08",
+        "url": "http://neo01.com/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-4/",
+        "description": "This is continue of part 3.
+Cartoon and Anime
+The image generated could potentially resemble copyrighted materials, so it’s essential to use caution when using these prompts.
+Cartoon
+
+Prompt: Cartoon ",
+        "wordCount": 425
     }
 </script-->
 
@@ -443,10 +440,20 @@ docker run -d -p 2222:22 ssh-enabled-container</code></pre>
         
 <nav id="article-nav">
     
+        <a href="/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-5/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            The Art of Prompt Engineering - Art Style Part 5
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
     
-        <a href="/2024/The-Art-Of-Prompt-Engineering-Art-Style-Part-12/" id="article-nav-older" class="article-nav-link-wrap">
+    
+        <a href="/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-3/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">The Art of Prompt Engineering - Art Style Part 12</p>
+        <p class="article-nav-title">The Art of Prompt Engineering - Art Style Part 3</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -489,10 +496,10 @@ docker run -d -p 2222:22 ssh-enabled-container</code></pre>
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2024/Interacting-With-Docker-Containers-Shell-And-SSH/" class="thumbnail">
+                            <a href="/2024/07/Interacting-With-Docker-Containers-Shell-And-SSH/" class="thumbnail">
     
     
-        <span style="background-image:url(/2024/Interacting-With-Docker-Containers-Shell-And-SSH/icon.jpeg)" alt="Interacting with Docker Containers - Shell and SSH" class="thumbnail-image"></span>
+        <span style="background-image:url(/2024/07/Interacting-With-Docker-Containers-Shell-And-SSH/icon.jpeg)" alt="Interacting with Docker Containers - Shell and SSH" class="thumbnail-image"></span>
     
 </a>
 
@@ -500,7 +507,7 @@ docker run -d -p 2222:22 ssh-enabled-container</code></pre>
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Development/">Development</a></p>
-                            <p class="item-title"><a href="/2024/Interacting-With-Docker-Containers-Shell-And-SSH/" class="title">Interacting with Docker Containers - Shell and SSH</a></p>
+                            <p class="item-title"><a href="/2024/07/Interacting-With-Docker-Containers-Shell-And-SSH/" class="title">Interacting with Docker Containers - Shell and SSH</a></p>
                             <p class="item-date"><time datetime="2024-07-04T00:00:00.000Z" itemprop="datePublished">2024-07-04</time></p>
                         </div>
                     </li>
@@ -508,10 +515,10 @@ docker run -d -p 2222:22 ssh-enabled-container</code></pre>
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2024/The-Art-Of-Prompt-Engineering-Art-Style-Part-12/" class="thumbnail">
+                            <a href="/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-12/" class="thumbnail">
     
     
-        <span style="background-image:url(/2024/The-Art-Of-Prompt-Engineering-Art-Style-Part-12/icon.jpg)" alt="The Art of Prompt Engineering - Art Style Part 12" class="thumbnail-image"></span>
+        <span style="background-image:url(/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-12/icon.jpg)" alt="The Art of Prompt Engineering - Art Style Part 12" class="thumbnail-image"></span>
     
 </a>
 
@@ -519,7 +526,7 @@ docker run -d -p 2222:22 ssh-enabled-container</code></pre>
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/AI/">AI</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/AI/Art-Gallery/">Art Gallery</a></p>
-                            <p class="item-title"><a href="/2024/The-Art-Of-Prompt-Engineering-Art-Style-Part-12/" class="title">The Art of Prompt Engineering - Art Style Part 12</a></p>
+                            <p class="item-title"><a href="/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-12/" class="title">The Art of Prompt Engineering - Art Style Part 12</a></p>
                             <p class="item-date"><time datetime="2024-06-15T00:00:00.000Z" itemprop="datePublished">2024-06-15</time></p>
                         </div>
                     </li>
@@ -527,10 +534,10 @@ docker run -d -p 2222:22 ssh-enabled-container</code></pre>
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2024/The-Art-Of-Prompt-Engineering-Art-Style-Part-11/" class="thumbnail">
+                            <a href="/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-11/" class="thumbnail">
     
     
-        <span style="background-image:url(/2024/The-Art-Of-Prompt-Engineering-Art-Style-Part-11/icon.jpg)" alt="The Art of Prompt Engineering - Art Style Part 11" class="thumbnail-image"></span>
+        <span style="background-image:url(/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-11/icon.jpg)" alt="The Art of Prompt Engineering - Art Style Part 11" class="thumbnail-image"></span>
     
 </a>
 
@@ -538,7 +545,7 @@ docker run -d -p 2222:22 ssh-enabled-container</code></pre>
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/AI/">AI</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/AI/Art-Gallery/">Art Gallery</a></p>
-                            <p class="item-title"><a href="/2024/The-Art-Of-Prompt-Engineering-Art-Style-Part-11/" class="title">The Art of Prompt Engineering - Art Style Part 11</a></p>
+                            <p class="item-title"><a href="/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-11/" class="title">The Art of Prompt Engineering - Art Style Part 11</a></p>
                             <p class="item-date"><time datetime="2024-06-14T00:00:00.000Z" itemprop="datePublished">2024-06-14</time></p>
                         </div>
                     </li>
@@ -546,10 +553,10 @@ docker run -d -p 2222:22 ssh-enabled-container</code></pre>
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2024/The-Art-Of-Prompt-Engineering-Art-Style-Part-10/" class="thumbnail">
+                            <a href="/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-10/" class="thumbnail">
     
     
-        <span style="background-image:url(/2024/The-Art-Of-Prompt-Engineering-Art-Style-Part-10/icon.jpg)" alt="The Art of Prompt Engineering - Art Style Part 10" class="thumbnail-image"></span>
+        <span style="background-image:url(/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-10/icon.jpg)" alt="The Art of Prompt Engineering - Art Style Part 10" class="thumbnail-image"></span>
     
 </a>
 
@@ -557,7 +564,7 @@ docker run -d -p 2222:22 ssh-enabled-container</code></pre>
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/AI/">AI</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/AI/Art-Gallery/">Art Gallery</a></p>
-                            <p class="item-title"><a href="/2024/The-Art-Of-Prompt-Engineering-Art-Style-Part-10/" class="title">The Art of Prompt Engineering - Art Style Part 10</a></p>
+                            <p class="item-title"><a href="/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-10/" class="title">The Art of Prompt Engineering - Art Style Part 10</a></p>
                             <p class="item-date"><time datetime="2024-06-13T00:00:00.000Z" itemprop="datePublished">2024-06-13</time></p>
                         </div>
                     </li>
@@ -565,10 +572,10 @@ docker run -d -p 2222:22 ssh-enabled-container</code></pre>
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2024/The-Art-Of-Prompt-Engineering-Art-Style-Part-9/" class="thumbnail">
+                            <a href="/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-9/" class="thumbnail">
     
     
-        <span style="background-image:url(/2024/The-Art-Of-Prompt-Engineering-Art-Style-Part-9/icon.jpg)" alt="The Art of Prompt Engineering - Art Style Part 9" class="thumbnail-image"></span>
+        <span style="background-image:url(/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-9/icon.jpg)" alt="The Art of Prompt Engineering - Art Style Part 9" class="thumbnail-image"></span>
     
 </a>
 
@@ -576,7 +583,7 @@ docker run -d -p 2222:22 ssh-enabled-container</code></pre>
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/AI/">AI</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/AI/Art-Gallery/">Art Gallery</a></p>
-                            <p class="item-title"><a href="/2024/The-Art-Of-Prompt-Engineering-Art-Style-Part-9/" class="title">The Art of Prompt Engineering - Art Style Part 9</a></p>
+                            <p class="item-title"><a href="/2024/06/The-Art-Of-Prompt-Engineering-Art-Style-Part-9/" class="title">The Art of Prompt Engineering - Art Style Part 9</a></p>
                             <p class="item-date"><time datetime="2024-06-12T00:00:00.000Z" itemprop="datePublished">2024-06-12</time></p>
                         </div>
                     </li>
